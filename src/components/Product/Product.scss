@@ -1,0 +1,72 @@
+@import '../../sass/mixins.scss';
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    hr{
+        width: 100%;
+    }
+    box-shadow: 6px 6px 5px grey;
+    padding: 10px;
+    width: 350px;
+    max-height: 400px;
+    border: 3px solid transparent;
+    border-radius: 7px;
+    transition-duration: 0.5s;
+    .product-image img{
+        width: 250px;
+        height: 250px;
+        margin: 18px 0;
+    }
+    .product-price{
+        display: flex;
+        justify-content: space-between;
+    }
+    &:hover{
+        border: 3px solid rgb(101, 252, 255);
+    }
+}
+.clicked{
+    max-height: 1000px;
+    border: 3px solid rgb(101, 252, 255);
+}
+
+.mod-cart {
+    .mod {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      
+      div {
+        padding: 5px 10px;
+        margin: 0 5px;
+        border-radius: 4px;
+        
+        &:first-child, &:last-child {
+          color: #717171;
+          cursor: pointer;
+          background-color:rgb(42, 251, 255); // Optional: add a background color for better visibility
+        }
+      }
+    }
+  
+    .delete-item {
+      color: white;
+      background-color: red;
+      padding: 10px;
+      margin-top: 10px;
+      text-align: center;
+      border-radius: 4px;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: darkred; // Optional: change color on hover for better UX
+      }
+    }
+  }
+  

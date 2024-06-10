@@ -1,0 +1,17 @@
+@import "../../sass/mixins.scss";
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-columns: min-content;
+  grid-gap: 20px;
+  transition-duration: 0.5s;
+  @media (max-width: 1140px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // Media query for viewport width less than 768px
+  @media (max-width: 778px) {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}

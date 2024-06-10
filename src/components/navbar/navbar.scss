@@ -1,0 +1,73 @@
+@import '../../sass/mixins.scss';
+
+.navbar{
+    height: 68px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding: 5px;
+    top:0;
+    left: 0;
+    box-shadow: 6px 6px 5px grey;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    background-color: #ffffff;
+    .navs{
+        width: 35%;
+        @include flex-center;
+        justify-content: space-between;
+        .nav{
+            @include flex-center;
+            width: 20%;
+            
+        }
+    }
+    .nav-right{
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      .user{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        transition-duration: 0.5s;
+        &:hover{
+          color: aqua;
+        }
+        *{
+          height: 23px;
+        }
+        cursor: pointer;
+      }
+      .cart{
+        @include flex-center;
+        justify-content: space-between;
+        width: 55px;
+        margin-right: 16px;
+        .cart-icon{
+          height: 35px;
+          transition-duration: 0.5s;
+          &:hover{
+            color: aqua;
+          }
+          
+        }
+        cursor: pointer;
+      }
+    }
+    
+    
+}
+.link-comp {
+    text-decoration: none;
+    color: inherit; 
+    transition-duration: 0.5s;      
+  }
+  
+  .link-comp:hover {
+    color: #3bc7ee; 
+  }
+/*
+*/
