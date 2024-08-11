@@ -30,6 +30,8 @@ export function ProductProvider({children}:{children: ReactNode}) {
 async function fetchData(): Promise<types.Products>{
     try{
       const resp= await axios.get('https://fakestoreapi.com/products?limit=5')
+      console.log(resp);
+      
       return resp.data
     }catch(e){
       console.log(e);

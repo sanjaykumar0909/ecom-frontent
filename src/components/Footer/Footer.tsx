@@ -15,8 +15,7 @@ const Footer: React.FC<FooterProps> = () => {
             <li><Link to={''}>Login</Link></li>
             <li><Link to={'/'}>Home</Link></li>
             <li><Link to={'/store'}>Store</Link></li>
-            <li><Link to={'/about'}>About</Link></li>
-            
+            <li><Link to={'/about'}>About</Link></li> 
           </ul>
         </nav>
       </div>

@@ -4,6 +4,8 @@ import { useProductContext } from '../../context/ProductContext'
 
 export default function Store() {
   const {data} = useProductContext()
+  console.log('/store');
+  
   return (
     <>
       <div style={{fontSize: "30px"}}>Store</div>

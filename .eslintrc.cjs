@@ -16,6 +16,12 @@ module.exports = {
     ],
     'prefer-const': 'off',
     'no-unused-vars': 'off',
-    "@typescript-eslint/no-unused-vars":"off"
+    "@typescript-eslint/no-unused-vars":"off",
+    "no-empty": "warn",
+    '@typescript-eslint/ban-ts-comment': ['error', {
+      'ts-ignore': false,
+      'ts-expect-error': false,
+      'ts-nocheck': false,
+    }],
   },
 }
